@@ -1,6 +1,6 @@
 import debounce from "lodash.debounce";
 import "../css/styles.css";
-import { fetchCountries } from "./fetchCountries";
+import getWordList from "./getWordList";
 import { messages } from "./messages";
 
 const refs = {
@@ -11,23 +11,24 @@ const refs = {
 };
 const DEBOUNCE_DELAY = 500;
 
-function searchContry() {
+async function searchContry() {
   const countryName = refs.search.value.trim();
   if (countryName === "") {
     restoreHtml();
     return;
   }
 
-  if (!/^[A-z]+$/.test(countryName)) {
-    return messages("error");
-  }
+  // if (!/^[A-z]+$/.test(countryName)) {
+  //   return messages("error");
+  // }
 
-  fetchCountries(countryName)
+  await getWordList(countryName)
     .then((contrys) => renderContryList(contrys))
     .catch((error) => messages("error"));
 }
 
 function renderContryList(contrys) {
+  console.log(contrys);
   if (contrys.length === 1) {
     countryInfo(contrys[0]);
   }
@@ -56,29 +57,29 @@ function countryList(contrys) {
   });
 }
 
-// function countryInfo(contrys) {
-//   refs.list.innerHTML = "";
-//   refs.search.blur();
-//   refs.info.innerHTML = `
-//   <h2>${contrys.name.official}</h2>
-//   <div class="info__box">
-//   <img src="${contrys.flags.svg}" height="100"/>
-//   <ul class="info__list">
-//   <li class="info__item">Capital: ${contrys.capital}</li>
-//   <li class="info__item">Area: ${(contrys.area / 1000).toFixed(
-//     2
-//   )} thousand km²</li>
-//   <li class="info__item">Population: ${(contrys.population / 1000000).toFixed(
-//     2
-//   )} mln people</li>
-//   <li class="info__item">Languages: ${Object.values(contrys.languages)}</li>
-// </ul>
-// </div>`;
-// }
+function countryInfo(contrys) {
+  refs.list.innerHTML = "";
+  refs.search.blur();
+  refs.info.innerHTML = `
+  <h2>${contrys.name.official}</h2>
+  <div class="info__box">
+  <img src="${contrys.flags.svg}" height="100"/>
+  <ul class="info__list">
+  <li class="info__item">Capital: ${contrys.capital}</li>
+  <li class="info__item">Area: ${(contrys.area / 1000).toFixed(
+    2
+  )} thousand km²</li>
+  <li class="info__item">Population: ${(contrys.population / 1000000).toFixed(
+    2
+  )} mln people</li>
+  <li class="info__item">Languages: ${Object.values(contrys.languages)}</li>
+</ul>
+</div>`;
+}
 
 function restoreHtml() {
   refs.search.value = "";
-  // refs.info.innerHTML = "";
+  refs.info.innerHTML = "";
   refs.list.innerHTML = "";
 }
 
