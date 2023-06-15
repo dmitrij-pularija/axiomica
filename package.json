@@ -1,22 +1,22 @@
 {
-  "name": "goit-js-hw-10",
+  "name": "test-lingvo",
   "version": "1.0.0",
-  "description": "goit-js-hw-10",
+  "description": "test-lingvo",
   "scripts": {
     "dev": "parcel *.html",
-    "build": "parcel build *.html --public-url /goit-js-hw-10/"
+    "build": "parcel build *.html --public-url /test-lingvo/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dmitrij-pularija/goit-js-hw-10.git"
+    "url": "git+https://github.com/dmitrij-pularija/test-lingvo.git"
   },
   "keywords": [],
   "author": "dmitrij-pularija",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dmitrij-pularija/goit-js-hw-10/issues"
+    "url": "https://github.com/dmitrij-pularija/test-lingvo/issues"
   },
-  "homepage": "https://github.com/dmitrij-pularija/goit-js-hw-10#readme",
+  "homepage": "https://github.com/dmitrij-pularija/test-lingvo#readme",
   "devDependencies": {
     "parcel": "^2.7.0"
   },
