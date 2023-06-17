@@ -68,7 +68,7 @@ ul {
   border: 1px solid #c0bcbca6;
   text-align: left;
   font: inherit;
-  padding: 8px 33px;
+  padding: 8px 8px 8px 33px;
   width: 450px;
 }
 
@@ -81,6 +81,24 @@ ul {
 .search-box:focus:not(.input-error) {
   outline-color: #c0bcbca6;
   border-color: #c0bcbca6;
+}
+
+.search-box::-webkit-search-cancel-button {
+  appearance: none;
+  position: relative;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  background-image: url("../img/close.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.search-box::-webkit-search-cancel-button:hover {
+  opacity: 1;
+  /* filter: brightness(0) saturate(100%) invert(54%) sepia(95%) saturate(3629%) hue-rotate(340deg) brightness(97%) contrast(105%); */
 }
 
 .input-error {
