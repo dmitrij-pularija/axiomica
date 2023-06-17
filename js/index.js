@@ -3,13 +3,24 @@ import "../css/styles.css";
 import getWordList from "./getWordList";
 
 const refs = {
-  input: document.getElementById("search-box"),
+  input: document.querySelector(".search-box"),
   list: document.querySelector(".word-list"),
 };
 const DEBOUNCE_DELAY = 500;
+let checkLanguage = true;
 
 const handleInput = async () => {
   const word = refs.input.value;
+  checkLanguage = /^[А-ЯЇЄҐа-яїєґ]+$/u.test(word);
+  
+  if (!checkLanguage) {
+    console.log("error");
+    refs.input.classList.add("input-error");
+    return;
+  } else {
+    refs.input.classList.remove("input-error");
+  }
+
   if (word === "") {
     restoreHtml();
     return;
@@ -36,6 +47,8 @@ const renderWordList = (suggests) => {
 const restoreHtml = () => {
   refs.input.value = "";
   refs.list.innerHTML = "";
+  checkLanguage = true;
+  refs.input.classList.remove("input-error");
 };
 
 refs.input.focus();

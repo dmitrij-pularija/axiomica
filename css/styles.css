@@ -60,7 +60,7 @@ ul {
   position: relative;
 }
 
-#search-box {
+.search-box {
   display: flex;
   border-radius: 50px;
   border: none;
@@ -72,11 +72,20 @@ ul {
   width: 450px;
 }
 
-#search-box:hover,
-#search-box:focus {
+.search-box:hover,
+.search-box:focus {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.search-box:hover:not(.input-error),
+.search-box:focus:not(.input-error) {
   outline-color: #c0bcbca6;
   border-color: #c0bcbca6;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.input-error {
+  outline-color: red;
+  border-color: red;
 }
 
 .form__icon {
@@ -97,7 +106,7 @@ ul {
   z-index: 2;
   margin: -3px 0 0 0;
   background-color: white;
-  border-top: 1px solid #c0bcbca6;
+  border-top: 1px solid white;
 }
 
 .word-list__inem {
