@@ -12,19 +12,18 @@ let checkLanguage = true;
 const handleInput = async () => {
   const word = refs.input.value;
   checkLanguage = /^[А-ЯЇЄҐа-яїєґ]+$/u.test(word);
-  
+  if (!word) {
+    restoreHtml();
+    return;
+  }
+
   if (!checkLanguage) {
-    console.log("error");
     refs.input.classList.add("input-error");
     return;
   } else {
     refs.input.classList.remove("input-error");
   }
 
-  if (word === "") {
-    restoreHtml();
-    return;
-  }
   const suggests = await getWordList(word);
   renderWordList(suggests);
 };
