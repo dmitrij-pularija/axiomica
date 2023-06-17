@@ -11,7 +11,7 @@ let checkLanguage = true;
 
 const handleInput = async () => {
   const word = refs.input.value;
-  checkLanguage = /^[А-ЯЇЄҐа-яїєґ]+$/u.test(word);
+  checkLanguage = /^[А-ЯІЇЄҐа-яіїєґʼ]+$/u.test(word);
   if (!word) {
     restoreHtml();
     return;
