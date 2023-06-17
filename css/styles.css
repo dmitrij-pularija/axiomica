@@ -88,7 +88,7 @@ ul {
   fill: currentColor;
 }
 
-.country-list {
+.word-list {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -100,38 +100,16 @@ ul {
   border-top: 1px solid #c0bcbca6;
 }
 
-.country-list__inem {
+.word-list__inem {
   width: 420px;
   display: flex;
   align-items: center;
   justify-content: start;
-  padding: 5px 0;
+  padding: 5px;
   cursor: pointer;
 }
 
-.country-list__inem:focus,
-.country-list__inem:hover {
+.word-list__inem:focus,
+.word-list__inem:hover {
   background-color: #c0bcbca6;
-}
-
-.flag {
-  margin-right: 5px;
-}
-
-.country-info {
-  max-width: 450px;
-  display: block;
-  margin-top: 20px;
-}
-.info__box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  column-gap: 20px;
-}
-.info__list {
-  margin: 0;
-}
-.info__item:not(:last-child) {
-  margin-bottom: 5px;
 }
