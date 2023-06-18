@@ -29,6 +29,7 @@ const handleInput = async () => {
 };
 
 const renderWordList = (suggests) => {
+  if (!suggests.length) return;
   refs.list.innerHTML = "";
 
   const markup = suggests
