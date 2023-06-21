@@ -17,7 +17,6 @@
   "bugs": {
     "url": "https://github.com/dmitrij-pularija/test-lingvo/issues"
   },
-  "homepage": "https://github.com/dmitrij-pularija/test-lingvo#readme",
   "devDependencies": {
     "buffer": "^6.0.3",
     "parcel": "^2.7.0"
