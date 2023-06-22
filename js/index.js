@@ -15,7 +15,7 @@ let checkLanguage = true;
 const getWordList = async (word) => {
   try {
     const { data } = await axios.get(
-      `${protocol}//${hostname}:${PORT}/api/v1/WordList`,
+      `${protocol}//${hostname}/api/v1/WordList`,
       {
         params: {
           prefix: word,
