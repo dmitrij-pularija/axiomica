@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "test-lingvo",
   "scripts": {
-    "start": "parcel build index.html && node server.js",
-    "build": "parcel build index.html"
+    "start": "parcel build *.html --public-url /test-lingvo/ && node server.js",
+    "build": "parcel build *.html --public-url /test-lingvo/"
   },
   "repository": {
     "type": "git",
