@@ -16,6 +16,7 @@
   "bugs": {
     "url": "https://github.com/dmitrij-pularija/test-lingvo/issues"
   },
+  "homepage": "https://test-lingvo.vercel.app/test-lingvo/test-lingvo",
   "devDependencies": {
     "buffer": "^6.0.3",
     "parcel": "^2.7.0"
