@@ -5,6 +5,7 @@ const axios = require("axios");
 require("dotenv").config();
 
 const { BASE_URL, API_KEY, PORT = 3001 } = process.env;
+axios.defaults.baseURL = BASE_URL;
 let tokenExpirationTime = null;
 
 const setHeader = async () => {
@@ -32,13 +33,13 @@ app.use(cors());
 app.use(express.json());
 app.use(express.static("public"));
 app.get(
-  `${BASE_URL}/api/v1/WordList`,
+  '/api/v1/WordList',
   async ({ query: { prefix, srcLang, pageSize } }, res) => {
     try {
       await setHeader();
       const {
         data: { Headings },
-      } = await axios.get(`${BASE_URL}/api/v1/WordList`, {
+      } = await axios.get('/api/v1/WordList', {
         params: {
           prefix,
           srcLang,
