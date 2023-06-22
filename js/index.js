@@ -15,7 +15,7 @@ let checkLanguage = true;
 const getWordList = async (word) => {
   try {
     const { data } = await axios.get(
-      `${protocol}//${hostname}/api/v1/WordList`,
+      'https://test-lingvo.vercel.app/api/v1/WordList',
       {
         params: {
           prefix: word,
