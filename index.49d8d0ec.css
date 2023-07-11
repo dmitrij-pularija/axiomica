@@ -1,0 +1,2 @@
+.modal{z-index:999;opacity:0;width:100%;height:100vh;display:none;position:fixed;top:0;left:0}.modal-overlay{background:#0009;width:100%;height:100vh;position:fixed}.modal-list{width:100%;height:100vh;display:flex;overflow-y:auto}.modal-container{z-index:3;text-align:center;background:#fff;border-right:10px;width:500px;max-width:100%;margin:auto;padding:40px;position:relative}.modal-close{cursor:pointer;z-index:2;-o-transition:all .4s;transition:all .4s;position:absolute;top:10px;right:10px}
+/*# sourceMappingURL=index.49d8d0ec.css.map */
