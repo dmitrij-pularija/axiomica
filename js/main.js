@@ -1,3 +1,4 @@
+import { mouse_follower } from '../3d/mouse-follower.min.js';
 document.addEventListener("DOMContentLoaded", function () {
     //mobile resize for 100vh
     if (window.innerWidth < 993) {
