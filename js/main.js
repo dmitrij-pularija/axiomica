@@ -244,6 +244,8 @@ document.addEventListener("DOMContentLoaded", function () {
 const canvas_size = [500, 500];
 const camera = new THREE.PerspectiveCamera(45, canvas_size[0] / canvas_size[1], 1, 10000);
 const lights = [new THREE.AmbientLight(0xffffff, 3.8)];
-const gltf_glb_path = new URL('../3d/tibetan-sand-fox.glb', import.meta.url);
+const gltf_glb_path = '../3d/tibetan-sand-fox.glb';
+window.addEventListener('DOMContentLoaded', mouse_follower(canvas_size, camera, lights, gltf_glb_path));
 
-window.addEventListener('DOMContentLoaded', mouse_follower(canvas_size, camera, lights, gltf_glb_path+"/"));
+// const gltf_glb_path = new URL('../3d/tibetan-sand-fox.glb', import.meta.url);
+// window.addEventListener('DOMContentLoaded', mouse_follower(canvas_size, camera, lights, gltf_glb_path+"/"));
