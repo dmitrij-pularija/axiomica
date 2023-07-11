@@ -241,11 +241,8 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 const canvas_size = [500, 500];
-// camera: new THREE.PerspectiveCamera(viewing angle, aspect ratio, shooting start, shooting end)
 const camera = new THREE.PerspectiveCamera(45, canvas_size[0] / canvas_size[1], 1, 10000);
-// lights: [new THREE.AmbientLight(color, intensity)] multiple lights can be added here
 const lights = [new THREE.AmbientLight(0xffffff, 3.8)];
-// GLTF or GLB file path
 const gltf_glb_path = new URL('../3d/tibetan-sand-fox.glb', import.meta.url);
 
 window.addEventListener('DOMContentLoaded', mouse_follower(canvas_size, camera, lights, gltf_glb_path+"/"));
