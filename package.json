@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/dmitrij-pularija/axiomica/issues"
   },
-  "homepage": "https://axiomica.vercel.app",
+  "homepage": "https://github.com/dmitrij-pularija/axiomica",
   "devDependencies": {
     "buffer": "^6.0.3",
     "parcel": "^2.7.0"
