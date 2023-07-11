@@ -1,2 +1,1 @@
-# Test Lingvo API
-https://dmitrij-pularija.github.io/test-lingvo/
+# Test 3D

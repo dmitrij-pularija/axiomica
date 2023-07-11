@@ -1,27 +1,832 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Test lingvo API</title>
+    <meta charset="utf-8">
+    <title>Axiomica</title>
+    <meta name="description" content="Development of crypto wallets and exchanges turnkey">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/favicon.svg">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css"> -->
+    <link href="libs/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="libs/modal/modal.css" rel="stylesheet">
+    <link href="libs/start.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
   </head>
   <body>
-    <div class="serch">
-      <h1>
-        <span class="l1">L</span><span class="l2">i</span
-        ><span class="l3">n</span><span class="l4">g</span
-        ><span class="l1">v</span><span class="l2">o</span
-        ><span class="l3">o</span><span class="l4">o</span>
-      </h1>
-      <div class="input__box">
-        <input type="search" class="search-box" />
-        <svg class="form__icon" width="20" height="20">
-          <use href="./img/icons.svg#search"></use>
+    <div class="page-wrapper df direction">
+      <div class="rhombus"></div>
+      <div class="cursor-item df aic jcc posa pointer">
+        <svg>
+          <use xlink:href="img/sprite.svg#cursor"></use>
         </svg>
       </div>
-      <ul class="word-list"></ul>
+      <header class="header index">
+        <div class="container">
+          <div class="header-list df aic">
+            <div class="header-block df aic"><a class="header-logo dif link" href="index.html"><img class="img" src="img/logo.svg" alt=""></a><a class="header-lang df aic jcc transition" href="#">
+                <svg class="index">
+                  <use xlink:href="img/sprite.svg#lang"></use>
+                </svg><span class="index">En</span></a>
+              <div class="header-burger cursor db"><span class="db"></span><span class="db"></span><span class="db"></span></div>
+            </div>
+            <div class="header-block center">
+              <nav class="header-nav">
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Development</a></li>
+                  <li><a href="#">Promotion</a></li>
+                  <li><a href="#">Portfolio</a></li>
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Contacts</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="header-block">
+              <div class="header-soc df aic"><a class="header-soc__item dif link" href="#" target="_blank">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#soc-1"></use>
+                  </svg></a><a class="header-soc__item dif link" href="#" target="_blank">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#soc-2"></use>
+                  </svg></a><a class="header-soc__item dif link" href="#" target="_blank">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#soc-3"></use>
+                  </svg></a></div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main posr">
+        <div id="main_canvas" class="main-animate posa pointer">
+          <canvas id="canvas" class="canvas" width="500px" height="500px"></canvas>
+          <!-- <img class="img" src="img/main.png" alt=""> -->
+        </div>
+        <div class="container">
+          <div class="main-wrapper maxw">
+            <h1 class="main-title">Development of <span>crypto wallets and exchanges</span> turnkey</h1>
+            <div class="main-subtitle">Let's turn your idea into a product and bring <br>the first customers</div>
+            <div class="main-buttons df aic"><a class="main-btn btn" href="#">Submit your application</a><a class="main-link dif aic link transition" href="#"><span class="db">Plan an online meeting</span>
+                <svg>
+                  <use xlink:href="img/sprite.svg#arrow"></use>
+                </svg></a></div>
+          </div>
+        </div>
+      </main>
+      <section class="white-section services">
+        <div class="container">
+          <div class="services-list df aifs jcsb fxw" data-tabs-wrapper>
+            <div class="services-left">
+              <h2 class="services-title">How can we be of service to you?</h2>
+              <div class="services-tabs">
+                <div class="services-tabs__item cursor" data-tabs-btn><span>Listing and market making for crypto projects</span><b>Development</b></div>
+                <div class="services-tabs__item cursor" data-tabs-btn><span>Development of web3 app and services</span><b>Marketing</b></div>
+              </div>
+            </div>
+            <div class="services-right maxw">
+              <div class="services-content" data-tabs-content>
+                <div class="services-item df aifs">
+                  <div class="services-item__icon"><img class="img" src="img/services-icon-1.png" alt=""></div>
+                  <div class="services-item__info posr">
+                    <div class="services-item__top dif aic posa"><img class="img" src="img/fire.png" alt=""><span>HOT</span></div>
+                    <div class="services-item__title">Application Blockchain Development</div><a class="services-item__link dif aic link" href="#"><span>Learn More</span><img class="img" src="img/services-arrow.svg" alt=""></a>
+                  </div>
+                </div>
+                <div class="services-item df aifs">
+                  <div class="services-item__icon"><img class="img" src="img/services-icon-2.png" alt=""></div>
+                  <div class="services-item__info posr">
+                    <div class="services-item__top dif aic posa"><img class="img" src="img/fire.png" alt=""><span>HOT</span></div>
+                    <div class="services-item__title">Telegram bots development</div><a class="services-item__link dif aic link" href="#"><span>Learn More</span><img class="img" src="img/services-arrow.svg" alt=""></a>
+                  </div>
+                </div>
+                <div class="services-item df aifs">
+                  <div class="services-item__icon"><img class="img" src="img/services-icon-3.png" alt=""></div>
+                  <div class="services-item__info posr">
+                    <div class="services-item__top dif aic posa"><img class="img" src="img/bell.png" alt=""><span>NEW</span></div>
+                    <div class="services-item__title">Development of crypto wallets</div><a class="services-item__link dif aic link" href="#"><span>Learn More</span><img class="img" src="img/services-arrow.svg" alt=""></a>
+                  </div>
+                </div>
+                <div class="services-item df aifs">
+                  <div class="services-item__icon"><img class="img" src="img/services-icon-4.png" alt=""></div>
+                  <div class="services-item__info posr">
+                    <div class="services-item__top dif aic posa"><img class="img" src="img/bell.png" alt=""><span>NEW</span></div>
+                    <div class="services-item__title">Development and audit of smart contracts</div><a class="services-item__link dif aic link" href="#"><span>Learn More</span><img class="img" src="img/services-arrow.svg" alt=""></a>
+                  </div>
+                </div>
+                <div class="services-item df aifs">
+                  <div class="services-item__icon"><img class="img" src="img/services-icon-5.png" alt=""></div>
+                  <div class="services-item__info posr">
+                    <div class="services-item__title">Development of cryptocurrency exchanges, exchangers, P2P platforms</div><a class="services-item__link dif aic link" href="#"><span>Learn More</span><img class="img" src="img/services-arrow.svg" alt=""></a>
+                  </div>
+                </div>
+                <div class="services-item df aifs">
+                  <div class="services-item__icon"><img class="img" src="img/services-icon-6.png" alt=""></div>
+                  <div class="services-item__info posr">
+                    <div class="services-item__title">Development of electronic payment systems</div><a class="services-item__link dif aic link" href="#"><span>Learn More</span><img class="img" src="img/services-arrow.svg" alt=""></a>
+                  </div>
+                </div>
+                <div class="services-item df aifs">
+                  <div class="services-item__icon"><img class="img" src="img/services-icon-7.png" alt=""></div>
+                  <div class="services-item__info posr">
+                    <div class="services-item__title">Development of MLM projects</div><a class="services-item__link dif aic link" href="#"><span>Learn More</span><img class="img" src="img/services-arrow.svg" alt=""></a>
+                  </div>
+                </div>
+              </div>
+              <div class="services-content" data-tabs-content>
+                <div class="services-item df aifs">
+                  <div class="services-item__icon"><img class="img" src="img/services-icon-8.png" alt=""></div>
+                  <div class="services-item__info posr">
+                    <div class="services-item__top dif aic posa"><img class="img" src="img/fire.png" alt=""><span>HOT</span></div>
+                    <div class="services-item__title">Listing on crypto exchanges</div><a class="services-item__link dif aic link" href="#"><span>Learn More</span><img class="img" src="img/services-arrow.svg" alt=""></a>
+                  </div>
+                </div>
+                <div class="services-item df aifs">
+                  <div class="services-item__icon"><img class="img" src="img/services-icon-9.png" alt=""></div>
+                  <div class="services-item__info posr">
+                    <div class="services-item__title">Listing on Coinmarketcap</div><a class="services-item__link dif aic link" href="#"><span>Learn More</span><img class="img" src="img/services-arrow.svg" alt=""></a>
+                  </div>
+                </div>
+                <div class="services-item df aifs">
+                  <div class="services-item__icon"><img class="img" src="img/services-icon-10.png" alt=""></div>
+                  <div class="services-item__info posr">
+                    <div class="services-item__top dif aic posa"><img class="img" src="img/fire.png" alt=""><span>HOT</span></div>
+                    <div class="services-item__title">Promotion of crypto projects</div><a class="services-item__link dif aic link" href="#"><span>Learn More</span><img class="img" src="img/services-arrow.svg" alt=""></a>
+                  </div>
+                </div>
+                <div class="services-item df aifs">
+                  <div class="services-item__icon"><img class="img" src="img/services-icon-11.png" alt=""></div>
+                  <div class="services-item__info posr">
+                    <div class="services-item__title">Conducting ICO and IDO</div><a class="services-item__link dif aic link" href="#"><span>Learn More</span><img class="img" src="img/services-arrow.svg" alt=""></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="projects">
+        <div class="container" data-tabs-wrapper>
+          <div class="projects-top df aic jcsb">
+            <div class="projects-top__left maxw">
+              <h2 class="projects-title title white">Projects created by us</h2>
+              <div class="projects-subtitle subtitle">We develop projects based on the most advanced technologies and implement approaches to solving problems. Our search research team is ready to help you achieve your project's goal, from discovery to completion.</div>
+            </div><a class="projects-btn btn" href="#">See all cases</a>
+          </div>
+          <div class="projects-tab__scrollbar">
+            <div class="projects-tabs dif aic">
+              <div class="projects-tabs__item dif aic cursor transition" data-tabs-btn>All</div>
+              <div class="projects-tabs__item dif aic cursor transition" data-tabs-btn>Blockchain application</div>
+              <div class="projects-tabs__item dif aic cursor transition" data-tabs-btn>Cryptocurrency exchange</div>
+              <div class="projects-tabs__item dif aic cursor transition" data-tabs-btn>Token</div>
+              <div class="projects-tabs__item dif aic cursor transition" data-tabs-btn>Project on TON</div>
+              <div class="projects-tabs__item dif aic cursor transition" data-tabs-btn>Telegram bot</div>
+            </div>
+          </div>
+          <div class="projects-contents">
+            <div class="projects-content" data-tabs-content>
+              <div class="team-slider__wrapper posr">
+                <div class="team-slider swiper">
+                  <div class="swiper-pagination"></div>
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="projects-item posr overflow df direction"><img class="projects-item__img posa db" src="img/projects-1.jpg" alt="">
+                        <div class="projects-item__top index">
+                          <div class="projects-item__info dif aic">Buying currency</div>
+                        </div>
+                        <div class="projects-item__title index">Online cryptocurrency purchase service Cardex</div>
+                        <div class="projects-item__subtitle index">Buying/selling cryptocurrency online with the possibility of paying by card and a one-level referral program, Telegram bot</div><a class="projects-item__link dif link transition" href="#"><span>Learn More</span><img class="img" src="img/services-arrow.svg" alt=""></a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="projects-item posr overflow df direction"><img class="projects-item__img posa db" src="img/projects-2.jpg" alt="">
+                        <div class="projects-item__top index">
+                          <div class="projects-item__info dif aic">Buying currency</div>
+                        </div>
+                        <div class="projects-item__title index">Cryptocurrency exchange service online 24BITBANK</div>
+                        <div class="projects-item__subtitle index">Buy/sell cryptocurrency online, including fiat currency cash acceptance and issuance. Autopay module, personal account, referral program and Telegram bot notifications.</div><a class="projects-item__link dif link transition" href="#"><span>Learn More</span><img class="img" src="img/services-arrow.svg" alt=""></a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="projects-item posr overflow df direction"><img class="projects-item__img posa db" src="img/projects-3.jpg" alt="">
+                        <div class="projects-item__top index">
+                          <div class="projects-item__info dif aic">Buying currency</div>
+                        </div>
+                        <div class="projects-item__title index">MLM game Infinity Space</div>
+                        <div class="projects-item__subtitle index">Matrix game with an affiliate program for the development of his team and further joint earnings.</div><a class="projects-item__link dif link transition" href="#"><span>Learn More</span><img class="img" src="img/services-arrow.svg" alt=""></a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="projects-item posr overflow df direction"><img class="projects-item__img posa db" src="img/projects-4.jpg" alt="">
+                        <div class="projects-item__top index">
+                          <div class="projects-item__info dif aic">Buying currency</div>
+                        </div>
+                        <div class="projects-item__title index">HulkFinance meme token and personal account</div>
+                        <div class="projects-item__subtitle index">Token and personal account with referral program for buying, exchanging, adding liquidity, creating a pool of meme-coinb from the Marve universe</div><a class="projects-item__link dif link transition" href="#"><span>Learn More</span><img class="img" src="img/services-arrow.svg" alt=""></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="projects-content" data-tabs-content>
+              <div class="team-slider__wrapper posr">
+                <div class="team-slider swiper">
+                  <div class="swiper-pagination"></div>
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="projects-item posr overflow df direction"><img class="projects-item__img posa db" src="img/projects-1.jpg" alt="">
+                        <div class="projects-item__top index">
+                          <div class="projects-item__info dif aic">Buying currency</div>
+                        </div>
+                        <div class="projects-item__title index">Online cryptocurrency purchase service Cardex</div>
+                        <div class="projects-item__subtitle index">Buying/selling cryptocurrency online with the possibility of paying by card and a one-level referral program, Telegram bot</div><a class="projects-item__link dif link transition" href="#"><span>Learn More</span><img class="img" src="img/services-arrow.svg" alt=""></a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="projects-item posr overflow df direction"><img class="projects-item__img posa db" src="img/projects-2.jpg" alt="">
+                        <div class="projects-item__top index">
+                          <div class="projects-item__info dif aic">Buying currency</div>
+                        </div>
+                        <div class="projects-item__title index">Cryptocurrency exchange service online 24BITBANK</div>
+                        <div class="projects-item__subtitle index">Buy/sell cryptocurrency online, including fiat currency cash acceptance and issuance. Autopay module, personal account, referral program and Telegram bot notifications.</div><a class="projects-item__link dif link transition" href="#"><span>Learn More</span><img class="img" src="img/services-arrow.svg" alt=""></a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="projects-item posr overflow df direction"><img class="projects-item__img posa db" src="img/projects-3.jpg" alt="">
+                        <div class="projects-item__top index">
+                          <div class="projects-item__info dif aic">Buying currency</div>
+                        </div>
+                        <div class="projects-item__title index">MLM game Infinity Space</div>
+                        <div class="projects-item__subtitle index">Matrix game with an affiliate program for the development of his team and further joint earnings.</div><a class="projects-item__link dif link transition" href="#"><span>Learn More</span><img class="img" src="img/services-arrow.svg" alt=""></a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="projects-item posr overflow df direction"><img class="projects-item__img posa db" src="img/projects-4.jpg" alt="">
+                        <div class="projects-item__top index">
+                          <div class="projects-item__info dif aic">Buying currency</div>
+                        </div>
+                        <div class="projects-item__title index">HulkFinance meme token and personal account</div>
+                        <div class="projects-item__subtitle index">Token and personal account with referral program for buying, exchanging, adding liquidity, creating a pool of meme-coinb from the Marve universe</div><a class="projects-item__link dif link transition" href="#"><span>Learn More</span><img class="img" src="img/services-arrow.svg" alt=""></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="projects-content" data-tabs-content>
+              <div class="team-slider__wrapper posr">
+                <div class="team-slider swiper">
+                  <div class="swiper-pagination"></div>
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="projects-item posr overflow df direction"><img class="projects-item__img posa db" src="img/projects-1.jpg" alt="">
+                        <div class="projects-item__top index">
+                          <div class="projects-item__info dif aic">Buying currency</div>
+                        </div>
+                        <div class="projects-item__title index">Online cryptocurrency purchase service Cardex</div>
+                        <div class="projects-item__subtitle index">Buying/selling cryptocurrency online with the possibility of paying by card and a one-level referral program, Telegram bot</div><a class="projects-item__link dif link transition" href="#"><span>Learn More</span><img class="img" src="img/services-arrow.svg" alt=""></a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="projects-item posr overflow df direction"><img class="projects-item__img posa db" src="img/projects-2.jpg" alt="">
+                        <div class="projects-item__top index">
+                          <div class="projects-item__info dif aic">Buying currency</div>
+                        </div>
+                        <div class="projects-item__title index">Cryptocurrency exchange service online 24BITBANK</div>
+                        <div class="projects-item__subtitle index">Buy/sell cryptocurrency online, including fiat currency cash acceptance and issuance. Autopay module, personal account, referral program and Telegram bot notifications.</div><a class="projects-item__link dif link transition" href="#"><span>Learn More</span><img class="img" src="img/services-arrow.svg" alt=""></a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="projects-item posr overflow df direction"><img class="projects-item__img posa db" src="img/projects-3.jpg" alt="">
+                        <div class="projects-item__top index">
+                          <div class="projects-item__info dif aic">Buying currency</div>
+                        </div>
+                        <div class="projects-item__title index">MLM game Infinity Space</div>
+                        <div class="projects-item__subtitle index">Matrix game with an affiliate program for the development of his team and further joint earnings.</div><a class="projects-item__link dif link transition" href="#"><span>Learn More</span><img class="img" src="img/services-arrow.svg" alt=""></a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="projects-item posr overflow df direction"><img class="projects-item__img posa db" src="img/projects-4.jpg" alt="">
+                        <div class="projects-item__top index">
+                          <div class="projects-item__info dif aic">Buying currency</div>
+                        </div>
+                        <div class="projects-item__title index">HulkFinance meme token and personal account</div>
+                        <div class="projects-item__subtitle index">Token and personal account with referral program for buying, exchanging, adding liquidity, creating a pool of meme-coinb from the Marve universe</div><a class="projects-item__link dif link transition" href="#"><span>Learn More</span><img class="img" src="img/services-arrow.svg" alt=""></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="projects-content" data-tabs-content>
+              <div class="team-slider__wrapper posr">
+                <div class="team-slider swiper">
+                  <div class="swiper-pagination"></div>
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="projects-item posr overflow df direction"><img class="projects-item__img posa db" src="img/projects-1.jpg" alt="">
+                        <div class="projects-item__top index">
+                          <div class="projects-item__info dif aic">Buying currency</div>
+                        </div>
+                        <div class="projects-item__title index">Online cryptocurrency purchase service Cardex</div>
+                        <div class="projects-item__subtitle index">Buying/selling cryptocurrency online with the possibility of paying by card and a one-level referral program, Telegram bot</div><a class="projects-item__link dif link transition" href="#"><span>Learn More</span><img class="img" src="img/services-arrow.svg" alt=""></a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="projects-item posr overflow df direction"><img class="projects-item__img posa db" src="img/projects-2.jpg" alt="">
+                        <div class="projects-item__top index">
+                          <div class="projects-item__info dif aic">Buying currency</div>
+                        </div>
+                        <div class="projects-item__title index">Cryptocurrency exchange service online 24BITBANK</div>
+                        <div class="projects-item__subtitle index">Buy/sell cryptocurrency online, including fiat currency cash acceptance and issuance. Autopay module, personal account, referral program and Telegram bot notifications.</div><a class="projects-item__link dif link transition" href="#"><span>Learn More</span><img class="img" src="img/services-arrow.svg" alt=""></a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="projects-item posr overflow df direction"><img class="projects-item__img posa db" src="img/projects-3.jpg" alt="">
+                        <div class="projects-item__top index">
+                          <div class="projects-item__info dif aic">Buying currency</div>
+                        </div>
+                        <div class="projects-item__title index">MLM game Infinity Space</div>
+                        <div class="projects-item__subtitle index">Matrix game with an affiliate program for the development of his team and further joint earnings.</div><a class="projects-item__link dif link transition" href="#"><span>Learn More</span><img class="img" src="img/services-arrow.svg" alt=""></a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="projects-item posr overflow df direction"><img class="projects-item__img posa db" src="img/projects-4.jpg" alt="">
+                        <div class="projects-item__top index">
+                          <div class="projects-item__info dif aic">Buying currency</div>
+                        </div>
+                        <div class="projects-item__title index">HulkFinance meme token and personal account</div>
+                        <div class="projects-item__subtitle index">Token and personal account with referral program for buying, exchanging, adding liquidity, creating a pool of meme-coinb from the Marve universe</div><a class="projects-item__link dif link transition" href="#"><span>Learn More</span><img class="img" src="img/services-arrow.svg" alt=""></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="projects-content" data-tabs-content>
+              <div class="team-slider__wrapper posr">
+                <div class="team-slider swiper">
+                  <div class="swiper-pagination"></div>
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="projects-item posr overflow df direction"><img class="projects-item__img posa db" src="img/projects-1.jpg" alt="">
+                        <div class="projects-item__top index">
+                          <div class="projects-item__info dif aic">Buying currency</div>
+                        </div>
+                        <div class="projects-item__title index">Online cryptocurrency purchase service Cardex</div>
+                        <div class="projects-item__subtitle index">Buying/selling cryptocurrency online with the possibility of paying by card and a one-level referral program, Telegram bot</div><a class="projects-item__link dif link transition" href="#"><span>Learn More</span><img class="img" src="img/services-arrow.svg" alt=""></a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="projects-item posr overflow df direction"><img class="projects-item__img posa db" src="img/projects-2.jpg" alt="">
+                        <div class="projects-item__top index">
+                          <div class="projects-item__info dif aic">Buying currency</div>
+                        </div>
+                        <div class="projects-item__title index">Cryptocurrency exchange service online 24BITBANK</div>
+                        <div class="projects-item__subtitle index">Buy/sell cryptocurrency online, including fiat currency cash acceptance and issuance. Autopay module, personal account, referral program and Telegram bot notifications.</div><a class="projects-item__link dif link transition" href="#"><span>Learn More</span><img class="img" src="img/services-arrow.svg" alt=""></a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="projects-item posr overflow df direction"><img class="projects-item__img posa db" src="img/projects-3.jpg" alt="">
+                        <div class="projects-item__top index">
+                          <div class="projects-item__info dif aic">Buying currency</div>
+                        </div>
+                        <div class="projects-item__title index">MLM game Infinity Space</div>
+                        <div class="projects-item__subtitle index">Matrix game with an affiliate program for the development of his team and further joint earnings.</div><a class="projects-item__link dif link transition" href="#"><span>Learn More</span><img class="img" src="img/services-arrow.svg" alt=""></a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="projects-item posr overflow df direction"><img class="projects-item__img posa db" src="img/projects-4.jpg" alt="">
+                        <div class="projects-item__top index">
+                          <div class="projects-item__info dif aic">Buying currency</div>
+                        </div>
+                        <div class="projects-item__title index">HulkFinance meme token and personal account</div>
+                        <div class="projects-item__subtitle index">Token and personal account with referral program for buying, exchanging, adding liquidity, creating a pool of meme-coinb from the Marve universe</div><a class="projects-item__link dif link transition" href="#"><span>Learn More</span><img class="img" src="img/services-arrow.svg" alt=""></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="projects-content" data-tabs-content>
+              <div class="team-slider__wrapper posr">
+                <div class="team-slider swiper">
+                  <div class="swiper-pagination"></div>
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="projects-item posr overflow df direction"><img class="projects-item__img posa db" src="img/projects-1.jpg" alt="">
+                        <div class="projects-item__top index">
+                          <div class="projects-item__info dif aic">Buying currency</div>
+                        </div>
+                        <div class="projects-item__title index">Online cryptocurrency purchase service Cardex</div>
+                        <div class="projects-item__subtitle index">Buying/selling cryptocurrency online with the possibility of paying by card and a one-level referral program, Telegram bot</div><a class="projects-item__link dif link transition" href="#"><span>Learn More</span><img class="img" src="img/services-arrow.svg" alt=""></a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="projects-item posr overflow df direction"><img class="projects-item__img posa db" src="img/projects-2.jpg" alt="">
+                        <div class="projects-item__top index">
+                          <div class="projects-item__info dif aic">Buying currency</div>
+                        </div>
+                        <div class="projects-item__title index">Cryptocurrency exchange service online 24BITBANK</div>
+                        <div class="projects-item__subtitle index">Buy/sell cryptocurrency online, including fiat currency cash acceptance and issuance. Autopay module, personal account, referral program and Telegram bot notifications.</div><a class="projects-item__link dif link transition" href="#"><span>Learn More</span><img class="img" src="img/services-arrow.svg" alt=""></a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="projects-item posr overflow df direction"><img class="projects-item__img posa db" src="img/projects-3.jpg" alt="">
+                        <div class="projects-item__top index">
+                          <div class="projects-item__info dif aic">Buying currency</div>
+                        </div>
+                        <div class="projects-item__title index">MLM game Infinity Space</div>
+                        <div class="projects-item__subtitle index">Matrix game with an affiliate program for the development of his team and further joint earnings.</div><a class="projects-item__link dif link transition" href="#"><span>Learn More</span><img class="img" src="img/services-arrow.svg" alt=""></a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="projects-item posr overflow df direction"><img class="projects-item__img posa db" src="img/projects-4.jpg" alt="">
+                        <div class="projects-item__top index">
+                          <div class="projects-item__info dif aic">Buying currency</div>
+                        </div>
+                        <div class="projects-item__title index">HulkFinance meme token and personal account</div>
+                        <div class="projects-item__subtitle index">Token and personal account with referral program for buying, exchanging, adding liquidity, creating a pool of meme-coinb from the Marve universe</div><a class="projects-item__link dif link transition" href="#"><span>Learn More</span><img class="img" src="img/services-arrow.svg" alt=""></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="reviews white-section">
+        <div class="container" data-tabs-wrapper>
+          <div class="reviews-top df aifs">
+            <h2 class="reviews-title title">Сustomer reviews after working with us</h2>
+            <div class="reviews-top__right maxw">
+              <div class="reviews-subtitle subtitle">Here’s what some of our dear customers have to say about us</div><a class="reviews-btn btn" href="#">See all castomers reviews</a>
+            </div>
+          </div>
+          <div class="reviews-tabs df aic">
+            <div class="reviews-tabs__item dif aic cursor" data-tabs-btn>Video reviews</div>
+            <div class="reviews-tabs__item dif aic cursor" data-tabs-btn> Text reviews</div>
+          </div>
+          <div class="reviews-contents">
+            <div class="reviews-content" data-tabs-content>
+              <div class="reviews-slider__wrapper posr">
+                <div class="reviews-video__slider swiper">
+                  <div class="swiper-pagination"></div>
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="progress-bar cursor posr">
+                        <video class="posa db" src="video.mp4" playsinline></video><svg width="69" height="77" viewBox="0 0 69 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M65.8389 34.4765C69.1824 36.399 69.1824 41.223 65.8389 43.1455L8.41672 76.1633C5.08339 78.0799 0.924374 75.6738 0.924374 71.8287L0.924377 5.79327C0.924377 1.94819 5.08341 -0.457926 8.41673 1.45874L65.8389 34.4765Z" fill="white"/>
+</svg>
+                      </div>
+                      <div class="reviews-text">Michael Richard</div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="progress-bar cursor posr">
+                        <video class="posa db" src="video.mp4" playsinline></video><svg width="69" height="77" viewBox="0 0 69 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M65.8389 34.4765C69.1824 36.399 69.1824 41.223 65.8389 43.1455L8.41672 76.1633C5.08339 78.0799 0.924374 75.6738 0.924374 71.8287L0.924377 5.79327C0.924377 1.94819 5.08341 -0.457926 8.41673 1.45874L65.8389 34.4765Z" fill="white"/>
+</svg>
+                      </div>
+                      <div class="reviews-text">Konstantin <br>Konstantinopolskiy</div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="progress-bar cursor posr">
+                        <video class="posa db" src="video.mp4" playsinline></video><svg width="69" height="77" viewBox="0 0 69 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M65.8389 34.4765C69.1824 36.399 69.1824 41.223 65.8389 43.1455L8.41672 76.1633C5.08339 78.0799 0.924374 75.6738 0.924374 71.8287L0.924377 5.79327C0.924377 1.94819 5.08341 -0.457926 8.41673 1.45874L65.8389 34.4765Z" fill="white"/>
+</svg>
+                      </div>
+                      <div class="reviews-text">Anna Nikolaevskaya</div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="progress-bar cursor posr">
+                        <video class="posa db" src="video.mp4" playsinline></video><svg width="69" height="77" viewBox="0 0 69 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M65.8389 34.4765C69.1824 36.399 69.1824 41.223 65.8389 43.1455L8.41672 76.1633C5.08339 78.0799 0.924374 75.6738 0.924374 71.8287L0.924377 5.79327C0.924377 1.94819 5.08341 -0.457926 8.41673 1.45874L65.8389 34.4765Z" fill="white"/>
+</svg>
+                      </div>
+                      <div class="reviews-text">Anna Nikolaevskaya</div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="progress-bar cursor posr">
+                        <video class="posa db" src="video.mp4" playsinline></video><svg width="69" height="77" viewBox="0 0 69 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M65.8389 34.4765C69.1824 36.399 69.1824 41.223 65.8389 43.1455L8.41672 76.1633C5.08339 78.0799 0.924374 75.6738 0.924374 71.8287L0.924377 5.79327C0.924377 1.94819 5.08341 -0.457926 8.41673 1.45874L65.8389 34.4765Z" fill="white"/>
+</svg>
+                      </div>
+                      <div class="reviews-text">Anna Nikolaevskaya</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="reviews-content" data-tabs-content>
+              <div class="reviews-slider__wrapper posr">
+                <div class="reviews-slider swiper">
+                  <div class="swiper-pagination"></div>
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="reviews-slider__item">
+                        <div class="reviews-slider__item-title"> Konstantin Konstantinopolskiy</div>
+                        <div class="reviews-slider__item-stars df aic"><img class="img" src="img/star.svg" alt=""><img class="img" src="img/star.svg" alt=""><img class="img" src="img/star.svg" alt=""><img class="img" src="img/star.svg" alt=""><img class="img" src="img/star.svg" alt=""></div>
+                        <div class="reviews-slider__item-text">We have been working with this company for several months and could not be satisfied with more than a few results. Their knowledge and coverage experience was impressive and they showed a real understanding of our needs</div><a class="services-item__link dif aic link" href="#"><span>Learn More</span><img class="img" src="img/services-arrow.svg" alt=""></a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="reviews-slider__item">
+                        <div class="reviews-slider__item-title"> Konstantin Konstantinopolskiy</div>
+                        <div class="reviews-slider__item-stars df aic"><img class="img" src="img/star.svg" alt=""><img class="img" src="img/star.svg" alt=""><img class="img" src="img/star.svg" alt=""><img class="img" src="img/star.svg" alt=""><img class="img" src="img/star.svg" alt=""></div>
+                        <div class="reviews-slider__item-text">We have been working with this company for several months and could not be satisfied with more than a few results. Their knowledge and coverage experience was impressive and they showed a real understanding of our needs</div><a class="services-item__link dif aic link" href="#"><span>Learn More</span><img class="img" src="img/services-arrow.svg" alt=""></a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="reviews-slider__item">
+                        <div class="reviews-slider__item-title"> Konstantin Konstantinopolskiy</div>
+                        <div class="reviews-slider__item-stars df aic"><img class="img" src="img/star.svg" alt=""><img class="img" src="img/star.svg" alt=""><img class="img" src="img/star.svg" alt=""><img class="img" src="img/star.svg" alt=""><img class="img" src="img/star.svg" alt=""></div>
+                        <div class="reviews-slider__item-text">We have been working with this company for several months and could not be satisfied with more than a few results. Their knowledge and coverage experience was impressive and they showed a real understanding of our needs</div><a class="services-item__link dif aic link" href="#"><span>Learn More</span><img class="img" src="img/services-arrow.svg" alt=""></a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="reviews-slider__item">
+                        <div class="reviews-slider__item-title"> Konstantin Konstantinopolskiy</div>
+                        <div class="reviews-slider__item-stars df aic"><img class="img" src="img/star.svg" alt=""><img class="img" src="img/star.svg" alt=""><img class="img" src="img/star.svg" alt=""><img class="img" src="img/star.svg" alt=""><img class="img" src="img/star.svg" alt=""></div>
+                        <div class="reviews-slider__item-text">We have been working with this company for several months and could not be satisfied with more than a few results. Their knowledge and coverage experience was impressive and they showed a real understanding of our needs</div><a class="services-item__link dif aic link" href="#"><span>Learn More</span><img class="img" src="img/services-arrow.svg" alt=""></a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="reviews-slider__item">
+                        <div class="reviews-slider__item-title"> Konstantin Konstantinopolskiy</div>
+                        <div class="reviews-slider__item-stars df aic"><img class="img" src="img/star.svg" alt=""><img class="img" src="img/star.svg" alt=""><img class="img" src="img/star.svg" alt=""><img class="img" src="img/star.svg" alt=""><img class="img" src="img/star.svg" alt=""></div>
+                        <div class="reviews-slider__item-text">We have been working with this company for several months and could not be satisfied with more than a few results. Their knowledge and coverage experience was impressive and they showed a real understanding of our needs</div><a class="services-item__link dif aic link" href="#"><span>Learn More</span><img class="img" src="img/services-arrow.svg" alt=""></a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="reviews-slider__item">
+                        <div class="reviews-slider__item-title"> Konstantin Konstantinopolskiy</div>
+                        <div class="reviews-slider__item-stars df aic"><img class="img" src="img/star.svg" alt=""><img class="img" src="img/star.svg" alt=""><img class="img" src="img/star.svg" alt=""><img class="img" src="img/star.svg" alt=""><img class="img" src="img/star.svg" alt=""></div>
+                        <div class="reviews-slider__item-text">We have been working with this company for several months and could not be satisfied with more than a few results. Their knowledge and coverage experience was impressive and they showed a real understanding of our needs</div><a class="services-item__link dif aic link" href="#"><span>Learn More</span><img class="img" src="img/services-arrow.svg" alt=""></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="center"><a class="reviews-mobile btn" href="#">See all castomers reviews</a></div>
+        </div>
+      </section>
+      <section class="white-section mission posr">
+        <div class="container">
+          <div class="mission-wrapper index">
+            <h2 class="mission-title title">Our mission — is from idea to digital product with a team of experts</h2>
+            <div class="mission-subtitle subtitle">Axiomica is an international team of web2/web3 developers that specializes in blockchain development. <br>We are fans of our business and love to solve non-standard tasks through the prism of our experience and expertise.</div>
+          </div><img class="mission-img db posa" src="img/mission.png" alt="">
+          <div class="mission-bottom df aic jcc fxw index">
+            <div class="mission-text">Grow your crypto business with us</div><a class="mission-btn btn" href="#">Submit your application</a>
+          </div>
+        </div>
+      </section>
+      <section class="white-section team">
+        <div class="container">
+          <div class="team-wrapper maxw">
+            <h2 class="team-title title">Company management and heads of departments</h2>
+            <div class="team-subtitle subtitle">Our team consists of real fans of their business with different work experience: from students-winners of math Olympiads to experienced engineers with 10 years of experience</div>
+          </div>
+          <div class="team-slider__wrapper posr">
+            <div class="team-slider swiper">
+              <div class="swiper-pagination"></div>
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="team-item posr"><img class="team-item__img db" src="img/team-1.jpg" alt="">
+                    <div class="team-item__wrapper posa">
+                      <div class="team-item__name">Iskander Khairullin</div>
+                      <div class="team-item__text">Technical Director</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="team-item posr"><img class="team-item__img db" src="img/team-2.jpg" alt="">
+                    <div class="team-item__wrapper posa">
+                      <div class="team-item__name">Marat Khamidullov</div>
+                      <div class="team-item__text">Marketing Director</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="team-item posr"><img class="team-item__img db" src="img/team-3.jpg" alt="">
+                    <div class="team-item__wrapper posa">
+                      <div class="team-item__name">Grigoriy Moiseev</div>
+                      <div class="team-item__text">Head of Design</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="team-item posr"><img class="team-item__img db" src="img/team-4.jpg" alt="">
+                    <div class="team-item__wrapper posa dif direction">
+                      <div class="team-item__name">Alex Zinatullin</div>
+                      <div class="team-item__text">Head of PMO</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="blog">
+        <div class="container">
+          <div class="blog-top df aic">
+            <h2 class="blog-title title white">Our blog</h2><a class="main-link dif aic link transition" href="#"><span class="db">See all article</span>
+              <svg>
+                <use xlink:href="img/sprite.svg#arrow"></use>
+              </svg></a>
+          </div>
+          <div class="blog-slider__wrapper posr">
+            <div class="blog-slider swiper">
+              <div class="swiper-pagination"></div>
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="blog-item posr"><a class="blog-item__link db posa" href="#"></a><img class="blog-item__img posa db" src="img/blog-1.jpg" alt="">
+                    <div class="blog-item__text posa">Understanding the Basics of Blockchain Technology</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="blog-item posr"><a class="blog-item__link db posa" href="#"></a><img class="blog-item__img posa db" src="img/blog-2.jpg" alt="">
+                    <div class="blog-item__text posa">Understanding the Basics of Blockchain Technology</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="blog-item posr"><a class="blog-item__link db posa" href="#"></a><img class="blog-item__img posa db" src="img/blog-3.jpg" alt="">
+                    <div class="blog-item__text posa">Understanding the Basics of Blockchain Technology</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="blog-item posr"><a class="blog-item__link db posa" href="#"></a><img class="blog-item__img posa db" src="img/blog-4.jpg" alt="">
+                    <div class="blog-item__text posa">Understanding the Basics of Blockchain Technology</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact">
+        <div class="contact-box">
+          <div class="container">
+            <div class="contact-wrapper index"><img class="db posa contact-phone pointer" src="img/phone.png" alt="">
+              <div class="contact-title maxw">Let's discuss your project together</div>
+              <form class="contact-form df fxw jcsb maxw aic index">
+                <div class="contact-item">
+                  <div class="contact-item__title">Your Name*</div>
+                  <input class="contact-item__input db" type="text">
+                </div>
+                <div class="contact-item contact-item__email contact-item__error">
+                  <div class="contact-item__title">Your Email*</div>
+                  <input class="contact-item__input db" type="email" value="Example@email.com">
+                  <div class="contact-item__wrong">
+                    <div class="contact-item__wrong__text">Wrong format, correct the data and try again</div>
+                  </div>
+                  <div class="contact-item__wrong__mobile">Wrong format, correct the data and try again</div>
+                </div>
+                <div class="contact-item contact-item__phone">
+                  <div class="contact-item__title">Your telephone number</div>
+                  <input class="contact-item__input db" type="tel">
+                </div>
+                <div class="contact-item">
+                  <div class="contact-item__title">Tell us about your project</div>
+                  <textarea class="contact-item__input db"></textarea>
+                </div>
+                <div class="contact-bottom df aic jcsb">
+                  <button class="contact-btn btn">See all castomers reviews</button>
+                  <div class="contact-policy">By submitting the form, you agree to the <a href="#">Privacy Policy</a></div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="contact-map posr">
+          <div class="contact-map__wrapper posa" id="map"><img class="img" src="img/map.jpg" alt=""></div>
+          <div class="container contact-container posa">
+            <div class="contact-info posr">
+              <div class="contact-info__top df aic jcsb">
+                <div class="contact-info__title">Address</div>
+                <div class="contact-mobile df aic"><a class="contact-mobile__item dif link transition" href="#"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_491_17901)">
+<path d="M47.2576 6.2085C46.6032 3.76344 44.6815 1.84198 42.2365 1.18747C37.8094 3.55453e-07 20.0486 0 20.0486 0C20.0486 0 2.28812 3.55453e-07 -2.13918 1.18747C-4.58422 1.84198 -6.50568 3.76344 -7.16019 6.2085C-8.34766 10.6358 -8.34766 19.8784 -8.34766 19.8784C-8.34766 19.8784 -8.34766 29.1211 -7.16019 33.5484C-6.50568 35.9934 -4.58422 37.9149 -2.13918 38.5693C2.28812 39.7568 20.0486 39.7568 20.0486 39.7568C20.0486 39.7568 37.8094 39.7568 42.2365 38.5693C44.6815 37.9149 46.6032 35.9934 47.2576 33.5484C48.4451 29.1211 48.4451 19.8784 48.4451 19.8784C48.4451 19.8784 48.4403 10.6358 47.2576 6.2085Z" fill="#FF0000"/>
+<path d="M14.3643 28.3973L29.1188 19.8794L14.3643 11.3613V28.3973Z" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0_491_17901">
+<rect width="40" height="40" rx="20" fill="white"/>
+</clipPath>
+</defs>
+</svg></a><a class="contact-mobile__item dif link transition" href="#"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20 40C31.0457 40 40 31.0457 40 20C40 8.9543 31.0457 0 20 0C8.9543 0 0 8.9543 0 20C0 31.0457 8.9543 40 20 40Z" fill="url(#paint0_linear_491_17906)"/>
+<path d="M20 40C31.0457 40 40 31.0457 40 20C40 8.9543 31.0457 0 20 0C8.9543 0 0 8.9543 0 20C0 31.0457 8.9543 40 20 40Z" fill="url(#paint1_linear_491_17906)"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9.04261 19.7831C14.8711 17.2519 18.7512 15.57 20.6996 14.754C26.2449 12.4393 27.4106 12.0396 28.16 12.0229C28.3265 12.0229 28.6929 12.0563 28.9427 12.2561C29.1425 12.4226 29.1925 12.6391 29.2258 12.8056C29.2591 12.9722 29.2924 13.3219 29.2591 13.5883C28.9594 16.7523 27.6604 24.4293 26.9943 27.9597C26.7112 29.4584 26.1617 29.958 25.6288 30.008C24.4631 30.1079 23.5805 29.2419 22.4648 28.5092C20.6996 27.3602 19.7171 26.6441 18.0018 25.5117C16.0201 24.2128 17.3024 23.4967 18.4348 22.331C18.7345 22.0313 23.8469 17.3685 23.9469 16.9522C23.9635 16.9022 23.9635 16.7024 23.8469 16.6025C23.7304 16.5025 23.5638 16.5359 23.4306 16.5692C23.2474 16.6025 20.4498 18.4676 15.0043 22.1478C14.205 22.6974 13.4889 22.9638 12.8394 22.9472C12.1234 22.9305 10.7579 22.5475 9.72538 22.2145C8.47642 21.8148 7.47725 21.5983 7.56052 20.8989C7.61047 20.5325 8.11006 20.1662 9.04261 19.7831Z" fill="white"/>
+<defs>
+<linearGradient id="paint0_linear_491_17906" x1="19.9833" y1="0" x2="19.9833" y2="39.6836" gradientUnits="userSpaceOnUse">
+<stop stop-color="#2AABEE"/>
+<stop offset="1" stop-color="#229ED9"/>
+</linearGradient>
+<linearGradient id="paint1_linear_491_17906" x1="19.9833" y1="0" x2="19.9833" y2="39.6836" gradientUnits="userSpaceOnUse">
+<stop stop-color="#2AABEE"/>
+<stop offset="1" stop-color="#229ED9"/>
+</linearGradient>
+</defs>
+</svg></a><a class="contact-mobile__item dif link transition" href="#"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_491_17910)">
+<path d="M-8.31152 -8.26683C-8.31152 -10.498 -6.43818 -12.3077 -4.12717 -12.3077H44.1275C46.4384 -12.3077 48.3119 -10.498 48.3119 -8.26683V40.0617C48.3119 42.2935 46.4384 44.1025 44.1275 44.1025H-4.12717C-6.43818 44.1025 -8.31152 42.2935 -8.31152 40.0617V-8.26683Z" fill="#006699"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M13.6917 30.2568V14.3401H8.61182V30.2568H13.6917ZM11.1517 12.1669C12.9232 12.1669 14.0258 10.9447 14.0258 9.41723C13.9928 7.85541 12.9232 6.66709 11.1854 6.66709C9.44767 6.66709 8.31152 7.85541 8.31152 9.41723C8.31152 10.9447 9.41388 12.1669 11.1186 12.1669H11.1517Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M16.623 30.2568H21.8987V21.3028C21.8987 20.8236 21.9329 20.3448 22.0722 20.0023C22.4536 19.0448 23.3217 18.0532 24.7791 18.0532C26.6881 18.0532 27.4518 19.5235 27.4518 21.679V30.2568H32.7269V21.0632C32.7269 16.1382 30.1242 13.8466 26.6533 13.8466C23.8072 13.8466 22.5577 15.4536 21.8636 16.5482H21.8988V14.2228H16.6232C16.6924 15.7274 16.623 30.2568 16.623 30.2568Z" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0_491_17910">
+<rect width="40" height="40" rx="20" fill="white"/>
+</clipPath>
+</defs>
+</svg></a></div>
+              </div><a class="contact-info__email dif link transition" href="mailto:hello@axiomica.io">hello@axiomica.io</a>
+              <div class="contact-info__bottom df jcsb">
+                <div class="contact-info__text">Yenigün mah. Mevlana cad. Midtown Plaza B floor 5, office 26, Muratpaşa/Antalya, Turkey</div>
+                <div class="contact-soc df aic"><a class="contact-soc__item dif link transition" href="#" target="_blank"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_372_6834)">
+<path d="M47.2573 6.2085C46.6029 3.76344 44.6813 1.84198 42.2362 1.18747C37.8091 3.55453e-07 20.0484 0 20.0484 0C20.0484 0 2.28787 3.55453e-07 -2.13942 1.18747C-4.58446 1.84198 -6.50592 3.76344 -7.16043 6.2085C-8.3479 10.6358 -8.3479 19.8784 -8.3479 19.8784C-8.3479 19.8784 -8.3479 29.1211 -7.16043 33.5484C-6.50592 35.9934 -4.58446 37.9149 -2.13942 38.5693C2.28787 39.7568 20.0484 39.7568 20.0484 39.7568C20.0484 39.7568 37.8091 39.7568 42.2362 38.5693C44.6813 37.9149 46.6029 35.9934 47.2573 33.5484C48.4449 29.1211 48.4449 19.8784 48.4449 19.8784C48.4449 19.8784 48.4401 10.6358 47.2573 6.2085Z" fill="white"/>
+<path d="M14.364 28.3973L29.1186 19.8794L14.364 11.3613V28.3973Z" fill="#00060B"/>
+</g>
+<defs>
+<clipPath id="clip0_372_6834">
+<rect width="40" height="40" rx="20" fill="white"/>
+</clipPath>
+</defs>
+</svg></a><a class="contact-soc__item dif link transition" href="#" target="_blank"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20 40C31.0457 40 40 31.0457 40 20C40 8.9543 31.0457 0 20 0C8.9543 0 0 8.9543 0 20C0 31.0457 8.9543 40 20 40Z" fill="white"/>
+<path d="M20 40C31.0457 40 40 31.0457 40 20C40 8.9543 31.0457 0 20 0C8.9543 0 0 8.9543 0 20C0 31.0457 8.9543 40 20 40Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9.04237 19.7836C14.8708 17.2524 18.7509 15.5705 20.6993 14.7545C26.2447 12.4398 27.4104 12.0401 28.1598 12.0234C28.3263 12.0234 28.6927 12.0567 28.9425 12.2566C29.1423 12.4231 29.1922 12.6396 29.2256 12.8061C29.2589 12.9726 29.2922 13.3224 29.2589 13.5888C28.9591 16.7528 27.6602 24.4298 26.9941 27.9602C26.711 29.4589 26.1614 29.9585 25.6285 30.0084C24.4629 30.1084 23.5803 29.2424 22.4645 28.5097C20.6993 27.3607 19.7168 26.6446 18.0016 25.5122C16.0199 24.2133 17.3022 23.4972 18.4345 22.3315C18.7343 22.0318 23.8467 17.369 23.9466 16.9527C23.9633 16.9027 23.9633 16.7029 23.8467 16.603C23.7301 16.503 23.5636 16.5363 23.4304 16.5696C23.2472 16.603 20.4495 18.4681 15.0041 22.1483C14.2047 22.6979 13.4887 22.9643 12.8392 22.9477C12.1231 22.931 10.7576 22.548 9.72513 22.2149C8.47618 21.8153 7.47701 21.5988 7.56027 20.8994C7.61023 20.533 8.10981 20.1667 9.04237 19.7836Z" fill="#00060B"/>
+</svg></a><a class="contact-soc__item dif link transition" href="#" target="_blank"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_372_6843)">
+<path d="M-8.31177 -8.26683C-8.31177 -10.498 -6.43842 -12.3077 -4.12741 -12.3077H44.1272C46.4382 -12.3077 48.3116 -10.498 48.3116 -8.26683V40.0617C48.3116 42.2935 46.4382 44.1025 44.1272 44.1025H-4.12741C-6.43842 44.1025 -8.31177 42.2935 -8.31177 40.0617V-8.26683Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M13.6917 30.2568V14.3401H8.61182V30.2568H13.6917ZM11.1517 12.1669C12.9232 12.1669 14.0258 10.9447 14.0258 9.41723C13.9928 7.85541 12.9232 6.66709 11.1854 6.66709C9.44767 6.66709 8.31152 7.85541 8.31152 9.41723C8.31152 10.9447 9.41388 12.1669 11.1186 12.1669H11.1517Z" fill="#00060B"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M16.6233 30.2568H21.8989V21.3028C21.8989 20.8236 21.9332 20.3448 22.0725 20.0023C22.4539 19.0448 23.3219 18.0532 24.7793 18.0532C26.6883 18.0532 27.452 19.5235 27.452 21.679V30.2568H32.7272V21.0632C32.7272 16.1382 30.1245 13.8466 26.6535 13.8466C23.8074 13.8466 22.558 15.4536 21.8638 16.5482H21.899V14.2228H16.6234C16.6927 15.7274 16.6233 30.2568 16.6233 30.2568Z" fill="#00060B"/>
+</g>
+<defs>
+<clipPath id="clip0_372_6843">
+<rect width="40" height="40" rx="20" fill="white"/>
+</clipPath>
+</defs>
+</svg></a></div>
+              </div><a class="contact-info__btn btn posa" href="#">Plan an online meeting</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="container index">
+          <div class="header-list df aic">
+            <div class="header-block df aic"><a class="header-logo dif link" href="index.html"><img class="img" src="img/logo.svg" alt=""></a><a class="header-lang df aic jcc transition" href="#">
+                <svg class="index">
+                  <use xlink:href="img/sprite.svg#lang"></use>
+                </svg><span class="index">En</span></a></div>
+            <div class="header-block center">
+              <nav class="header-nav">
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Development</a></li>
+                  <li><a href="#">Promotion</a></li>
+                  <li><a href="#">Portfolio</a></li>
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Contacts</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="header-block">
+              <div class="header-soc df aic"><a class="header-soc__item dif link" href="#" target="_blank">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#soc-1"></use>
+                  </svg></a><a class="header-soc__item dif link" href="#" target="_blank">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#soc-2"></use>
+                  </svg></a><a class="header-soc__item dif link" href="#" target="_blank">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#soc-3"></use>
+                  </svg></a></div>
+            </div>
+          </div>
+          <div class="footer-bottom df aic jcsb">
+            <div class="footer-links df aic"><a class="footer-link dif link transition" href="#">Privacy Policy</a><a class="footer-link dif link transition" href="#">Cookie politics</a></div>
+            <div class="footer-copy">© Axiomica</div>
+          </div>
+        </div>
+      </footer>
     </div>
-    <script src="./js/index.js" type="module"></script>
+    <script type="module" src="https://threejs.org/build/three.js"></script>
+    <script type="module" src="./3d/GLTFLoader.js"></script>
+    <script src="./3d/mouse-follower.min.js"></script>
+    <script src="libs/jquery.min.js"></script>
+    <script src="libs/swiper/swiper-bundle.min.js"></script>
+    <script src="libs/modal/modal.js"></script>
+    <script type="module" src="./js/main.js"></script>
   </body>
 </html>
